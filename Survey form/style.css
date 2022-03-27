@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	margin: 0;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: ;
+	background-image: linear-gradient(90deg, rgba(166, 60, 27, 0.5), rgba(166, 60, 27, 0.5)), url('https://st2.depositphotos.com/2931363/9695/i/950/depositphotos_96952028-stock-photo-young-handsome-man-in-barbershop.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#container {
+	max-width: 750px;
+	margin: 50px auto 0 auto;
+}
+#top h1{
+	margin-bottom: 15px;
+	font-size: 35px;
+}
+#top p {
+	font-size: 18px;
+	font-style: italic;
+}
+#top {
+	text-align: center;
+	margin-bottom: 30px;
+	color: white;
+}
+
+#survey-form{
+	background: rgba(8, 72, 92, 0.9);
+	padding: 45px 40px;
+	border-radius: 12px;
+}
+.form-group {
+	margin-bottom: 30px;
+}
+label {
+	display: flex;
+	margin-bottom: 8px;
+	color: white;
+	font-size: 18px;
+}
+input {
+	display: block;
+}
+.form-control, .textarea-control {
+	padding: 10px 12px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	font-size: 16px;
+	width: 100%;
+}
+.form-control:focus, .textarea-control:focus {
+	outline-width: 1px;
+	outline-color: #15b086/*hsl(14deg, 85%, 40%)*/;/*#D23F11*/
+
+}
+#form-p {
+	display: flex;
+	margin-bottom: 8px;
+	font-size: 18px;
+	color: white;
+}
+.selectable-input{
+	display: inline-block;
+	margin-right: 8px;
+	min-height: 18px;
+	min-width: 18px;
+}
+span {
+	font-size: 14px;
+	margin-left: 6px;
+	vertical-align: center;
+}
+.textarea-control {
+	min-height: 100px;
+	resize: vertical;
+}
+.submit-btn {
+	width: 100%;
+	color: white;
+	background: #0FB88B;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	box-shadow: 0 5px #0c8a68;
+}
+.submit-btn:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+.submit-btn:active {
+	position: relative;
+	top: 5px;
+	box-shadow: 0 0;
+}
+
+
+@media (max-width: 770px){
+	#container {
+		max-width: 550px;	
+	}
+}
+@media (max-width: 570px){
+	#container{
+		max-width: 100%;
+	}
+}
