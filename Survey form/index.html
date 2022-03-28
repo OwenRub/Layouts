@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+	<title>Survey Form</title>
+</head>
+<body>
+	<main id="container">
+		<header id="top">
+			<h1 id="title">BarberShop survey form</h1>
+			<p id="description">Your feedback is priceless, thank you</p>
+		</header>
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+				<input id="name" type="text" name="name" placeholder="Enter your name" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input id="email" type="email" name="email" placeholder="Enter your email" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label id="number-label" for="number">Age (optional)</label>
+				<input id="number" type="number" name="age" min="10" max="99" placeholder="Enter your age" class="form-control">
+			</div>
+			<div class="form-group">
+				<p id="form-p">How would you rate your experience?</p>
+				<label><input type="radio" name="user-rate" value="excelent" class="selectable-input" checked>Excelent</label>
+				<label><input type="radio" name="user-rate" value="good" class="selectable-input">Good</label>
+				<label><input type="radio" name="user-rate" value="regular" class="selectable-input">Regular</label>
+				<label><input type="radio" name="user-rate" value="bad" class="selectable-input">Bad</label>
+			</div>
+			<div class="form-group">
+				<label id="dropdown-label" for="dropdown">What service did we give you?</label>
+				<select id="dropdown" name="service" class="form-control" required>
+					<option value disabled selected>- Select an option -</option>
+					<option value="cut">Haircut</option>
+					<option value="dyeing">Hair dyeing</option>
+					<option value="eyebrow">Eyebrow treatment</option>
+					<option value="beard">Beard treatment</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p id="form-p">What would you like to be improved? <span>(check all that apply)</span></p>
+				<label><input type="checkbox" name="user-recommendation" value="support" class="selectable-input">Customer support</label>
+				<label><input type="checkbox" name="user-recommendation" value="machines" class="selectable-input">Cutting machines</label>
+				<label><input type="checkbox" name="user-recommendation" value="music" class="selectable-input">Music</label>
+				<label><input type="checkbox" name="user-recommendation" value="illumination" class="selectable-input">Illumination</label>
+				<label><input type="checkbox" name="user-recommendation" value="price" class="selectable-input">Price</label>
+			</div>
+			<div class="form-group">
+				<label id="textarea-label" for="opinion">We would like to know your opinion</label>
+				<textarea id="opinion" name="opinion" class="textarea-control" placeholder="Enter your comment here..."></textarea>
+			</div>
+			<div class="form-group">
+				<button id="submit" type="submit" class="submit-btn">Submit</button>
+			</div>
+		</form>
+	</main>
+</body>
+</html>
