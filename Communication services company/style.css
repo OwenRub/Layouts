@@ -3,6 +3,10 @@
 	--secondary-gray: #636363;
 	--contrast-blue: #3cb7c7;
 }
+html{
+	scroll-behavior: smooth;
+	scroll-padding-top: 60px;
+}
 *{
 	margin: 0;
 	padding: 0;
